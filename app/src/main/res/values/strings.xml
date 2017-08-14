@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FormularioPractica</string>
+    <string name="texto_boton_click">Siguiente</string>
+    <string name="texto_boton_editar">Editar Datos</string>
+    <string name="form_username">Nombre completo</string>
+    <string name="form_pick_time">Fecha de nacimiento</string>
+    <string name="form_telefono">Telefono</string>
+    <string name="form_email">Email</string>
+    <string name="form_descripcion">Descripción</string>
+
+    <string name="texto_confirmar_datos">Confirmar Datos</string>
+</resources>
