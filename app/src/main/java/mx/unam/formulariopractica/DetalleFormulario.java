@@ -11,12 +11,13 @@ public class DetalleFormulario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_formulario);
 
-        Bundle parametro    = getIntent().getExtras();
-        String nombre       = getResources().getString(R.string.pnombre);
-        String fecha        = getResources().getString(R.string.pfecha);
-        String telefono     = getResources().getString(R.string.ptelefono);
-        String email        = getResources().getString(R.string.pemail);
-        String descripcion  = getResources().getString(R.string.pdescripcion);
+        Bundle parametros    = getIntent().getExtras();
+
+        String nombre       = parametros.getString(getResources().getString(R.string.pnombre));
+        String fecha        = parametros.getString(getResources().getString(R.string.pfecha));
+        String telefono     = parametros.getString(getResources().getString(R.string.ptelefono));
+        String email        = parametros.getString(getResources().getString(R.string.pemail));
+        String descripcion  = parametros.getString(getResources().getString(R.string.pdescripcion));
 
         TextView tvNombre       = (TextView)findViewById(R.id.tv_nombre);
         TextView tvFecha        = (TextView)findViewById(R.id.tv_fecha);
