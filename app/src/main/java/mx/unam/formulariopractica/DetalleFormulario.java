@@ -45,11 +45,11 @@ public class DetalleFormulario extends AppCompatActivity {
         btnEditar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                finish();
+                /*
                 Intent editar = new Intent(DetalleFormulario.this, MainActivity.class);
                 startActivity(editar);
-                finish();
-
-
+                */
             }
         });
 
