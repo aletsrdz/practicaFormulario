@@ -14,9 +14,9 @@ import android.widget.Toast;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
-    EditText etNombre, etFecha, etTelefono, etEmail, etDescripcion;
-    Calendar calendar = Calendar.getInstance();
-
+    private EditText etNombre, etFecha, etTelefono, etEmail, etDescripcion;
+    private  Calendar calendar = Calendar.getInstance();
+    private Button btnSiguiente;
 
 
     @Override
@@ -39,9 +39,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button btnSiguiente = (Button)findViewById(R.id.btnSiguiente);
-
-
+        btnSiguiente = (Button)findViewById(R.id.btnSiguiente);
 
         btnSiguiente.setOnClickListener(new View.OnClickListener() {
             @Override
